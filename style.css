@@ -15,6 +15,10 @@ nav {
     background-color: #cafdff;
 }
 
+.row {  
+    background-color: #eadcff;
+}
+
 header {
     background-color: #eadcff;
     height: calc(100vh - 70px);
@@ -97,7 +101,7 @@ h2 {
     padding: 0 24px;
 }
 
-.img {
+img {
     width: 100%;
 }
 
