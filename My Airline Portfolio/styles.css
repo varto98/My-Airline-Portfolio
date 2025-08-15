@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Roboto:ital,wght@0,700;1,700&display=swap');
+
+* {
+  font-family: 'Anaheim', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(252, 187, 133);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    height: 100px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+}
+
+.nav__link--list {
+    display: flex;
+}   
+
+.nav__link--anchor {
+    margin: 0 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav__link--anchor-primary {
+    background-color: rgb(28, 162, 156);
+    color: white;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link--anchor-primary:hover {
+    background-color: rgb(100, 181, 177);
+    transition: background-color 450ms ease-in-out;
+}
+
+.personal__logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(28, 162, 156);
+    min-width: 270px;
+}
+
+/* INICIO */
+
+.about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-me__picture--mask {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 24px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-me__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    padding-top: 12px;
+}
+
+.about-me__title {
+    padding: 12px;
+}
+
+.about-me__social {
+   padding: 18px;
+}
+
+.fab, .fas {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.fab:hover, .fas:hover {
+    font-size: larger;
+    color: rgb(28, 162, 156);
+    transition: 450ms ease-in-out;
+    cursor: pointer;
+}
+
+/* VISUAL AIDS */
+
+.visual-aid__container {
+    display: flex;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.visual-aid__mask {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+.visual-aid__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#visual-aid-2 {
+    transform: scale(1.4);
+    overflow: hidden;
+}
+
+#visual-aid-1, #visual-aid-3 {
+    transform: scale(0.8);
+}
