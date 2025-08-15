@@ -38,6 +38,11 @@ li {
 }
 
 
+section:nth-child(even) {
+    background-color: rgb(67, 44, 3);
+}
+
+
 /* NAVIGATION BAR */
 
 nav {
@@ -105,7 +110,7 @@ nav {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 24px 0;
+    margin: 12px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -162,10 +167,14 @@ nav {
 }
 
 #visual-aid-2 {
-    transform: scale(1.4);
+    transform: scale(1.5);
     overflow: hidden;
+    padding-right: 12px;
 }
 
 #visual-aid-1, #visual-aid-3 {
     transform: scale(0.8);
 }
+
+/*APPLICATIONS */
+
