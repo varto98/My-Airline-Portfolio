@@ -192,6 +192,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .application__image--wrapper:hover {
@@ -223,8 +224,8 @@ nav {
 }
 
 .application__name {
+    font-size: 10px;
     position: absolute;
-    font-size: smaller;
     overflow: visible;
     transform: scale(0);
     bottom: 0;
@@ -237,7 +238,7 @@ nav {
     bottom: 0;
 }
 
-.application:hover .application__name {
+.application__image--wrapper:hover .application__name {
     transform: scale(1);
     transition: transform 450ms ease-in-out;
 }
