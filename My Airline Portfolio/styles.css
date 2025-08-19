@@ -37,6 +37,7 @@ li {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 12vh;
+    min-width: 630px;
 }
 
 
@@ -247,23 +248,36 @@ nav {
 
 /* EXPERIENCES */
 
-.experience__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-
 .experience__wrapper {
-    display: flex;
     width: 100%;
-    overflow: hidden;
+    height: 450px;            
+    overflow: hidden;          
     border-radius: 8px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    height: 450px;
 }
 
-.experience__list {
-    display: flex;
+.experience__image {
+    width: 100%;
+    height: auto;             
+    display: block;
+}
+
+.experience__item {
+    margin-bottom: 24px;
+}
+
+#HoS {
+    position: relative;
+    top: -112px;
+}
+
+#ALS {
+    position: relative;
+    top: -112px;
+}
+
+#relief {
+    position: relative;
+    object-position: center -80%;
 }
