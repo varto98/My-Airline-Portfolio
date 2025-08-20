@@ -329,4 +329,6 @@ nav {
     opacity: 1;
 }
 
-  
+.hover__text, .hover__text--para, .hover__text--title {
+    background: none;
+}
