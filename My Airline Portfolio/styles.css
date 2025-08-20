@@ -259,25 +259,71 @@ nav {
 
 .experience__image {
     width: 100%;
-    height: auto;             
     display: block;
+    height: 100%;        /* fill the wrapper height */
+    object-fit: cover;   /* crop to cover */
+    object-position: top; /* default */
+    position: relative;  
 }
 
 .experience__item {
-    margin-bottom: 24px;
+    margin-bottom: 60px;
 }
 
+.experience__list {
+    margin-top: 32px;
+}   
+
 #HoS {
-    position: relative;
-    top: -112px;
+    object-position: center 28%;
 }
 
 #ALS {
-    position: relative;
-    top: -112px;
+    object-position: center 37%;
 }
 
 #relief {
-    position: relative;
-    object-position: center -80%;
+    object-position: center 80%;
 }
+
+.experience__wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.582);
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    z-index: 2;
+}
+
+.experience__wrapper:hover:before {
+    opacity: 1;
+}
+
+.experience__wrapper:hover .experience__image{
+    transform: scale(1.05); 
+    filter: blur(2px);
+    transition: filter 350ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.hover__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.experience__wrapper:hover .hover__text {
+    opacity: 1;
+}
+
+  
