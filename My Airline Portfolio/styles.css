@@ -255,6 +255,7 @@ nav {
     border-radius: 8px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 .experience__image {
@@ -312,14 +313,16 @@ nav {
 .hover__text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.2rem;
     opacity: 0;
     z-index: 3;
     transition: opacity 0.3s ease;
-    text-align: center;
+}
+
+.hover__text--title, .hover__text--para {
+    color: white;
+    text-align: left;
 }
 
 .experience__wrapper:hover .hover__text {
