@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(195, 250, 243);
+  background-color: rgb(223, 254, 250);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     line-height: 1.25;
     margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 p {
@@ -59,6 +64,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.about-me__social {
+    text-decoration: none;
 }
 
 .nav__link--list {
@@ -118,6 +127,19 @@ nav {
     overflow: hidden;
     margin: 12px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    animation: animate-profile-picture 800ms 200ms backwards;
+}
+
+@keyframes animate-profile-picture {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .about-me__picture {
@@ -130,10 +152,27 @@ nav {
 
 .about-me__title {
     padding: 12px;
+    animation: fade-up 800ms 200ms backwards;
 }
 
 .about-me__social {
    padding: 18px;
+   animation: fade-up 800ms 200ms backwards;
+}
+
+.about-me__para {
+    animation: fade-up 800ms 200ms backwards;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .fab, .fas {
@@ -154,6 +193,16 @@ nav {
     display: flex;
     width: 100%;
     margin-top: 2vh;
+    animation: fade-in 800ms 200ms backwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .visual-aid__mask {
@@ -318,6 +367,7 @@ nav {
     opacity: 0;
     z-index: 3;
     transition: opacity 0.3s ease;
+    width: 500px;
 }
 
 .hover__text--title, .hover__text--para {
@@ -331,4 +381,21 @@ nav {
 
 .hover__text, .hover__text--para, .hover__text--title {
     background: none;
+}
+
+/* SMART PHONES AND TABLETS*/
+@media (max-width: 768px) {
+    height: 68px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
 }
